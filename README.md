@@ -25,7 +25,7 @@ yarn android or npx react-native run-android
 ```
 ### Running iOS App in Debug Mode
 ```
-yarn android or npx react-native run-ios 
+yarn ios or npx react-native run-ios 
 ```
 ### if you face unable to connect development server error in Android while running in Dev Mode
 ```
