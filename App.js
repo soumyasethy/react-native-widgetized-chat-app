@@ -1,10 +1,9 @@
 import React from 'react';
 import {Provider} from 'mobx-react';
-import {Text} from 'react-native';
+import {Platform, Text} from 'react-native';
 import {stores} from './src/stores';
-import MessageScreen from './src/screens/MessageScreen';
-import ChatScreen from './src/screens/ChatScreen';
 import {Navigator} from './src/navigator';
+import SplashScreen from 'react-native-splash-screen';
 
 const App = () => {
   React.useEffect(() => {
@@ -16,6 +15,7 @@ const App = () => {
         style: [{fontFamily: 'Roboto'}, origin.props.style],
       });
     };
+    if (Platform.OS === 'android') SplashScreen.hide();
   }, []);
 
   return (

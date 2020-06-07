@@ -12,6 +12,10 @@
     "android-reverse-tcp": "adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.5.1",
+    "@react-navigation/stack": "^5.4.2",
+    "lodash": "^4.17.15",
     "mobx": "^5.15.4",
     "mobx-react": "^6.1.8",
     "react": "16.11.0",
@@ -20,10 +24,7 @@
     "react-native-reanimated": "^1.9.0",
     "react-native-safe-area-context": "^3.0.2",
     "react-native-screens": "^2.8.0",
-    "@react-native-community/masked-view": "^0.1.10",
-    "@react-navigation/native": "^5.5.1",
-    "@react-navigation/stack": "^5.4.2",
-    "lodash": "^4.17.15"
+    "react-native-splash-screen": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
