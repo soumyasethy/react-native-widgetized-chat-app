@@ -8,9 +8,7 @@ const Chats = ({data}: any) => {
   const flatListRef = useRef();
   const [isKeyboardOpened] = keyboardHook();
   useEffect(() => {
-    if (isKeyboardOpened) {
-      setTimeout(() => flatListRef.current.scrollToEnd({animated: true}), 100);
-    }
+    setTimeout(() => flatListRef.current.scrollToEnd({animated: true}), 100);
   }, [isKeyboardOpened]);
 
   return (
@@ -29,7 +27,7 @@ const Chats = ({data}: any) => {
           )
         }
         keyExtractor={(item, index) => index.toString()}
-        initialScrollIndex={data.length - 1}
+        // initialScrollIndex={data.length - 1}
       />
     </View>
   );
