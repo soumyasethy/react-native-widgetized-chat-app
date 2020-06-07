@@ -21,7 +21,7 @@ export const widgetManager = (index: number, data: dataInterface) => {
       return <StatusBarX key={index} />;
     }
     case widgetMap.HEADER_MESSAGES_WIDGET: {
-      return <AppBarMessages key={index} />;
+      return <AppBarMessages key={index} data={data.data} />;
     }
     case widgetMap.HEADER_CHAT_WIDGET: {
       return <AppBarChat key={index} data={data.data} />;

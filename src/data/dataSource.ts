@@ -9,7 +9,7 @@ export const messagesData = [
   },
   {
     widgetType: widgetMap.HEADER_MESSAGES_WIDGET,
-    data: {},
+    data: {debounce: 500},
   },
   {
     widgetType: widgetMap.TAB_BAR_WIDGET,

@@ -13,6 +13,7 @@ import {storeType} from '../stores/StoreType';
 import {Separator} from './Separator';
 import {_goToPage} from '../navigator/_goToPage';
 import {pageType} from '../navigator/pageType';
+import {fonts} from '../utils/fonts';
 
 interface dataInterface {
   image: string;
@@ -78,7 +79,11 @@ export default inject(storeType.messagesStore)(observer(Messages));
 
 const styles = StyleSheet.create({
   container: {flex: 1},
-  message: {fontWeight: '300', fontSize: 12, color: colors.BLACK2},
+  message: {
+    fontWeight: '300',
+    fontSize: fonts.size.xsmall,
+    color: colors.BLACK2,
+  },
   imageWrapper: {
     height: 50,
     width: 50,
@@ -96,11 +101,11 @@ const styles = StyleSheet.create({
     paddingTop: 1,
     paddingBottom: 1,
   },
-  unreadText: {color: colors.WHITE, fontSize: 12},
-  name: {fontWeight: '500', fontSize: 18},
+  unreadText: {color: colors.WHITE, fontSize: fonts.size.xsmall},
+  name: {fontWeight: fonts.weight.medium, fontSize: fonts.size.medium},
   time: {
-    fontWeight: '500',
-    fontSize: 15,
+    fontWeight: fonts.weight.medium,
+    fontSize: fonts.size.default,
   },
   nameTime: {flexDirection: 'row', justifyContent: 'space-between'},
   messageUnreadWrapper: {

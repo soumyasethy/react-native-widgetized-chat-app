@@ -14,7 +14,6 @@ import {storeType} from '../stores/StoreType';
 import {keyboardHook} from './KeyboardHook';
 import {spacing} from '../utils/spacing';
 const screenWidth = Math.round(Dimensions.get('window').width);
-const searchDebounce = 500;
 
 const AppBarMessages = (props: any) => {
   const [isKeyboardOpened, dismissKeyboard] = keyboardHook();
@@ -52,7 +51,7 @@ const AppBarMessages = (props: any) => {
 
   return (
     <View style={styles.container}>
-      <View style={{flexDirection: 'row', alignItems: 'center', flex: 1}}>
+      <View style={styles.container2}>
         <TouchableOpacity
           onPress={handleBackPress}
           style={{padding: spacing.default}}>
@@ -70,7 +69,7 @@ const AppBarMessages = (props: any) => {
             style={{flex: 1}}
             placeholder="Type to search..."
             underlineColorAndroid="rgba(0,0,0,0)"
-            onChangeText={_.debounce(onChangeText, searchDebounce)}
+            onChangeText={_.debounce(onChangeText, props.data.debounce)}
           />
         </Animated.View>
       </View>
@@ -99,5 +98,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
+  container2: {flexDirection: 'row', alignItems: 'center', flex: 1},
   imageStyle: {width: 20, height: 20, resizeMode: 'contain'},
 });
