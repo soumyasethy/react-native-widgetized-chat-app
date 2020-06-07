@@ -7,15 +7,17 @@ import SplashScreen from 'react-native-splash-screen';
 
 const App = () => {
   React.useEffect(() => {
-    // override fonts with Roboto
-    let oldRender = Text.render;
-    Text.render = function(...args) {
-      let origin = oldRender.call(this, ...args);
-      return React.cloneElement(origin, {
-        style: [{fontFamily: 'Roboto'}, origin.props.style],
-      });
-    };
-    if (Platform.OS === 'android') SplashScreen.hide();
+    if (Platform.OS === 'android') {
+      // override fonts with Roboto
+      let oldRender = Text.render;
+      Text.render = function(...args) {
+        let origin = oldRender.call(this, ...args);
+        return React.cloneElement(origin, {
+          style: [{fontFamily: 'Roboto'}, origin.props.style],
+        });
+      };
+      SplashScreen.hide();
+    }
   }, []);
 
   return (
