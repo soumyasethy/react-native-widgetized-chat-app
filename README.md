@@ -1,6 +1,6 @@
 ![alt text](https://github.com/soumyasethy/react-native-widgetized-chat-app/blob/master/screenshots/ios-gif.gif)
 ![alt text](https://github.com/soumyasethy/react-native-widgetized-chat-app/blob/master/screenshots/android.gif)
-# EpiFi Assignment in React Native
+# Dynamic Widgetized Component Rendering in React Native
 
 ## _Features_
 
