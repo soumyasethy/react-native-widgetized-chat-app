@@ -1,11 +1,11 @@
-![alt text](https://github.com/soumyasethy/epifi-assignment/blob/master/screenshots/ios-gif.gif)
-![alt text](https://github.com/soumyasethy/epifi-assignment/blob/master/screenshots/android.gif)
+![alt text](https://github.com/soumyasethy/react-native-widgetized-chat-app/blob/master/screenshots/ios-gif.gif)
+![alt text](https://github.com/soumyasethy/react-native-widgetized-chat-app/blob/master/screenshots/android.gif)
 # EpiFi Assignment in React Native
 
 ## _Features_
 
 - Built with `react-native v0.62.2(latest)`
-- Completely Widgetization Flow built with JSON ("EpiFi/src/data/dataSource.ts")
+- Completely Widgetization Flow built with JSON ("react-native-widgetized-chat-app/src/data/dataSource.ts")
 - Used MobX for state management along with HOC, Hooks, Stateless Components.
 - Responsive Screen
 - Splash screen with logo Android & iOS
